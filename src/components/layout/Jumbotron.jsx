@@ -13,7 +13,7 @@ export class Jumbotron extends Component {
           href='https://reactjs.org/'
           target='_blank'
           role='button'
-          rel="noopener noreferrer"
+          rel='noopener noreferrer'
         >
           Learn more
         </a>
