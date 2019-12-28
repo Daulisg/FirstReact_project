@@ -1,11 +1,16 @@
 import React, { Fragment, Component } from 'react'
 
-export class Navbar extends Component {
+
+class Navbar extends Component {
+    static defaultProps = {
+      title: `React App`
+    };
+
     render() {
         return (
         <Fragment>
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="https://reactjs.org/" target='_blank' rel="noopener noreferrer">Navbar</a>
+        <a className="navbar-brand" href="https://reactjs.org/" target='_blank' rel="noopener noreferrer">{this.props.title}</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -23,7 +28,7 @@ export class Navbar extends Component {
           Dropdown
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a className="dropdown-item" href="https://reactjs.org/" target='_blank' rel="noopener noreferrer">React Home Page</a>
+          <a className="dropdown-item" href="https://reactjs.org/" target='_blank' rel="noopener noreferrer">Courses</a>
           <a className="dropdown-item" href="https://getbootstrap.com/" target='_blank' rel="noopener noreferrer">Bootstrap</a>
           <div className="dropdown-divider"></div>
           <a className="dropdown-item" href="https://reactjs.org/" target='_blank' rel="noopener noreferrer">Something else here</a>
