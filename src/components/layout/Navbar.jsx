@@ -1,4 +1,5 @@
 import React, { Fragment, Component } from 'react';
+import Jumbotron from './Jumbotron'
 
 class Navbar extends Component {
   static defaultProps = {
@@ -120,6 +121,7 @@ class Navbar extends Component {
             </form>
           </div>
         </nav>
+        <Jumbotron/>
       </Fragment>
     );
   }
